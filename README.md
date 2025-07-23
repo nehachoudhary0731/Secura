@@ -29,11 +29,14 @@ decrypting files using dynamically generated unique keys.
 #Sample Test
 1. Run the App
 Open terminal and run: python app.py
+
 2.Open in Browser
 - Follow the URL displayed in terminal
+  
 3.Encrypt a File
    - On the **Home Page**, upload a file.
    - Click the **Encrypt** button. And download Encrypted file and key file.
+     
 4.Decrypt the File
    - Go to the **Decrypt Page**.
    - Upload both:
