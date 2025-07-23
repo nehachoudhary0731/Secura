@@ -26,11 +26,11 @@ decrypting files using dynamically generated unique keys.
 - Fernet from cryptography module
 - HTML5 + CSS3 (For Basic UI Styling)
 
-#Sample Test
+# Sample Test
 1. Run the App
 Open terminal and run: python app.py
 
-2.Open in Browser
+2. Open in Browser
 - Follow the URL displayed in terminal
   
 3.Encrypt a File
@@ -45,7 +45,7 @@ Open terminal and run: python app.py
    - Click **Decrypt**. And Download the decrypted file.
 5. **Back to Home**
 
-#Project Structure
+# Project Structure
 
 Secura/
 │
