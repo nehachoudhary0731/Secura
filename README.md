@@ -26,12 +26,21 @@ decrypting files using dynamically generated unique keys.
 - Fernet from cryptography module
 - HTML5 + CSS3 (For Basic UI Styling)
 
-#sample test
--run app.py in terminal like python app.py
--follow given url 
--Go to HomePage upload file then click encrypt and download encrypt file along with key.
--Then Decrypt encrypted file by uploading both encrypted and key file.
-- Download Decrypted file and back to home 
+#Sample Test
+1. Run the App
+Open terminal and run: python app.py
+2.Open in Browser
+- Follow the URL displayed in terminal
+3.Encrypt a File
+   - On the **Home Page**, upload a file.
+   - Click the **Encrypt** button. And download Encrypted file and key file.
+4.Decrypt the File
+   - Go to the **Decrypt Page**.
+   - Upload both:
+     - Encrypted file
+     - Key file
+   - Click **Decrypt**. And Download the decrypted file.
+5. **Back to Home**
 
 #Project Structure
 
