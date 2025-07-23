@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secura | File Encryption & Decryption</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to <span class="secura">Secura</span></h1>
+        <p class="tagline">Encrypt and Decrypt your files securely </p>
+
+        <div class="section">
+            <h2>Encrypt a File</h2>
+            <form action="/encrypt" method="post" enctype="multipart/form-data">
+                <label>Select file to encrypt:</label>
+                <input type="file" name="file" required>
+                <button type="submit">Encrypt</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Decrypt a File</h2>
+            <form action="/decrypt" method="post" enctype="multipart/form-data">
+                <label>Upload Encrypted File (.enc):</label>
+                <input type="file" name="enc_file" required>
+
+                <label>Upload Key File (.key):</label>
+                <input type="file" name="key_file" required>
+
+                <button type="submit">Decrypt</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

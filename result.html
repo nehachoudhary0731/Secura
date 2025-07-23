@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secura | {{ operation }} Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ operation }} Successful </h1>
+
+        {% if operation == 'Encryption' %}
+            <p> Encrypted File: <a href="{{ url_for('download', filename=filename) }}">Download Encrypted File</a></p>
+            <p>🗝 Secret Key File: <a href="{{ url_for('download', filename=keyname) }}">Download Key File</a></p>
+        {% elif operation == 'Decryption' %}
+            <p> Decrypted File: <a href="{{ url_for('download', filename=filename) }}">Download Decrypted File</a></p>
+        {% endif %}
+
+        <br><br>
+        <a class="back" href="{{ url_for('index') }}">← Go Back to Secura</a>
+    </div>
+</body>
+</html>
