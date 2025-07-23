@@ -9,14 +9,14 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
-# Define directories(this folders will store files based on their satge)
+# Define directories(this folders will store files based on their stage)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, 'maintenance/uploads')
 ENCRYPTED_FOLDER = os.path.join(BASE_DIR, 'maintenance/encrypted')
 DECRYPTED_FOLDER = os.path.join(BASE_DIR, 'maintenance/decrypted')
 KEY_FOLDER = os.path.join(BASE_DIR, 'maintenance/keys')
 
-#hereit will Create folders if not exist
+#here it will Create folders if not exist
 
 for folder in [UPLOAD_FOLDER, ENCRYPTED_FOLDER, DECRYPTED_FOLDER, KEY_FOLDER]:
     os.makedirs(folder, exist_ok=True)
