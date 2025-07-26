@@ -45,24 +45,3 @@ Open terminal and run: python app.py
    - Click **Decrypt**. And Download the decrypted file.
 5. **Back to Home**
 
-# Project Structure
-
-Secura/
-│
-├── app.py
-├── requirements.txt
-│
-├── templates/
-│   ├── index.html
-│   └── result.html
-│
-├── static/
-│   └── style.css
-│
-├── uploads/        ( Stores uploaded files)
-├── encrypted/      (Stores encrypted files)
-├── decrypted/      (Stores decrypted files)
-├── keys/           (Stores generated key files)
-
-
-   
